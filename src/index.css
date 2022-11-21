@@ -1,8 +1,13 @@
 .taulu {
     border:1px solid black;
     text-align: center;
-    width: 100%;
+    
   }
+.cell {
+    border: 1px solid black;
+    text-align: center;
+    width: 5%;
+}
 .correct {
     background-color: green;
     text-align: center;

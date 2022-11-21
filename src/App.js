@@ -12,11 +12,8 @@ const App = () => {
   const [persons, setPersons] = useState(
     [])
   const [games, setGames] = useState('')
-  const [newNumber, setNewNumber] = useState('')
-  const [newFilter, setFilter] = useState('')
-  const [errorMessage, setErrorMessage] = useState(null)
 
- 
+
   useEffect(() => {
     console.log('effect')
     setPersons(data.persons)
@@ -27,109 +24,123 @@ const App = () => {
   console.log("games", games)
 
 
- 
+
   const ShowPersons = (person) => {
     let pisteet = 0
-    for(let i = 0; i< data.games.length;i++){
-      if(person.person.rivi[i] === data.games[i].result){
+    for (let i = 0; i < data.games.length; i++) {
+      if (person.person.rivi[i] === data.games[i].result) {
         pisteet++
       }
     }
     console.log(person)
-      return (
-        <li>
-          {person.person.name} {pisteet}
-          
-  
-        </li>
-      )
-    
+    return (
+
+      <tr className='taulu'>
+        <td className='taulu'>{person.person.name}</td>
+        <td className='taulu'>{pisteet}</td>
+        <td className='taulu'>{person.person.top3[0]}</td>
+        <td className='taulu'>{person.person.top3[1]}</td>
+        <td className='taulu'>{person.person.top3[2]}</td>
+      </tr>
+
+    )
+
   }
   const ShowPerson = (person) => {
-  
-    
+
+
     console.log(person)
-      return (
-        <th className='taulu'>
-          {person.person.name}
-          
-  
-        </th>
-      )
-    
+    return (
+      <th className='cell'>
+        {person.person.name}
+      </th>
+    )
+
   }
   const ShowGamesAndRows = (game) => {
     console.log(game)
-      return (
-        <tr>
+    let merkki = game.game.result
+    console.log("merkki", merkki)
+    if(merkki === 0){
+      merkki = "X"
+    }
+    return (
+      <tr>
         <td className='taulu'>
-          {game.game.name} 
+          {game.game.name}
         </td>
         {data.persons.map(person =>
-          <ShowPlayerResult key={person.id} player={person} gameId={game.game.id} gameResult={game.game.result}/>
-          )}
-          <td className='taulu'>{game.game.result}</td>
-        </tr>
-      )
-    
+          <ShowPlayerResult key={person.id} player={person} gameId={game.game.id} gameResult={game.game.result} />
+        )}
+        <td className='taulu'>{merkki}</td>
+      </tr>
+    )
+
   }
   const ShowPlayerResult = (props) => {
     console.log(props.player)
     console.log(props.gameId)
     console.log(props.gameResult)
     let merkki = props.player.rivi[props.gameId]
-    if(merkki === 0){
+    if (merkki === 0) {
       merkki = 'X'
     }
-    if(props.player.rivi[props.gameId] === props.gameResult){
-      return(
+    if (props.player.rivi[props.gameId] === props.gameResult) {
+      return (
         <td className='taulu'>
           <div className='correct'>{merkki}</div>
         </td>
       )
     } else if (props.gameResult === null) {
-      return(
-      <td className='taulu'>
-        {merkki}
+      return (
+        <td className='taulu'>
+          {merkki}
         </td>
       )
     } else {
-      return(
-      <td className='incorrect'>
-        {merkki}
+      return (
+        <td className='incorrect'>
+          {merkki}
         </td>
       )
     }
   }
 
-  
+
 
   return (
     <div>
       <h2>Veikkaus</h2>
-      <ul>
+      <table className='taulu'>
+        <tr className='taulu'>
+          <th className='taulu'>Nimi</th>
+          <th className='taulu'>Pisteet</th>
+          <th className='taulu'>1.</th>
+          <th className='taulu'>2.</th>
+          <th className='taulu'>3.</th>
+        </tr>
         {persons.map(person =>
           <ShowPersons key={person.id} person={person} />
         )}
-      </ul>
+      </table>
       <table className='taulu'>
         <tr className='taulu'>
-          <th className='taulu'>peli</th>
-          {persons.map(person => 
-          <ShowPerson key={person.id} person={person}/>
+          <th className='taulu'>Peli</th>
+          {persons.map(person =>
+            <ShowPerson key={person.id} person={person} />
           )}
-          <th className='taulu'>tulos</th>
+          <th className='cell'>tulos</th>
         </tr>
         {data.games.map(game =>
-        <ShowGamesAndRows key={game.id} game={game}/>
-      )}
+          <ShowGamesAndRows key={game.id} game={game} />
+        )}
       </table>
 
     </div>
   )
-        
-        
-        
+
+
+
 
 }
 
