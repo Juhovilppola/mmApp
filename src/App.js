@@ -94,10 +94,10 @@ const App = () => {
           {game.game.name} 
         </td>
         <td className='taulu'>
-          {persons[0].rivi[game.game.id]}
+          {data.persons[0].rivi[game.game.id]}
         </td>
         <td className='taulu'>
-          {persons[1].rivi[game.game.id]}
+          {data.persons[1].rivi[game.game.id]}
         </td>
         </tr>
       )
