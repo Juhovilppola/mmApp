@@ -6,9 +6,11 @@ import './index.css'
 
 
 
+
 const App = () => {
 
-  const [persons, setPersons] = useState([])
+  const [persons, setPersons] = useState(
+    [])
   const [games, setGames] = useState('')
   const [newNumber, setNewNumber] = useState('')
   const [newFilter, setFilter] = useState('')
@@ -25,50 +27,18 @@ const App = () => {
   console.log("games", games)
 
 
-  const personsToShow = false
-    ? persons
-    : persons.filter(person => person.name.toLowerCase().includes(newFilter.toLowerCase()))
-
-  const handlePersonChange = (event) => {
-    console.log(event.target.value)
-    setGames(event.target.value)
-  }
-  const handleNumberChange = (event) => {
-    console.log(event.target.value)
-    setNewNumber(event.target.value)
-  }
-  const handleFilterChange = (event) => {
-    console.log(event.target.value)
-    setFilter(event.target.value)
-  }
-
-
-  
-
-
-  const Notification = ({ message }) => {
-    if (message === null) {
-      return null
-    }
-    if (!message.error) {
-      return (
-        <div className="noterror">
-          {message.message}
-        </div>
-      )
-    } else {
-      return (
-        <div className="error">
-          {message.message}
-        </div>
-      )
-    }
-  }
+ 
   const ShowPersons = (person) => {
+    let pisteet = 0
+    for(let i = 0; i< data.games.length;i++){
+      if(person.person.rivi[i] === data.games[i].result){
+        pisteet++
+      }
+    }
     console.log(person)
       return (
         <li>
-          {person.person.name} {person.person.number} {person.button}
+          {person.person.name} {pisteet}
           
   
         </li>
@@ -76,10 +46,12 @@ const App = () => {
     
   }
   const ShowPerson = (person) => {
+  
+    
     console.log(person)
       return (
         <th className='taulu'>
-          {person.person.name} 
+          {person.person.name}
           
   
         </th>
@@ -93,17 +65,44 @@ const App = () => {
         <td className='taulu'>
           {game.game.name} 
         </td>
-        <td className='taulu'>
-          {data.persons[0].rivi[game.game.id]}
-        </td>
-        <td className='taulu'>
-          {data.persons[1].rivi[game.game.id]}
-        </td>
+        {data.persons.map(person =>
+          <ShowPlayerResult key={person.id} player={person} gameId={game.game.id} gameResult={game.game.result}/>
+          )}
+          <td className='taulu'>{game.game.result}</td>
         </tr>
       )
     
   }
+  const ShowPlayerResult = (props) => {
+    console.log(props.player)
+    console.log(props.gameId)
+    console.log(props.gameResult)
+    let merkki = props.player.rivi[props.gameId]
+    if(merkki === 0){
+      merkki = 'X'
+    }
+    if(props.player.rivi[props.gameId] === props.gameResult){
+      return(
+        <td className='taulu'>
+          <div className='correct'>{merkki}</div>
+        </td>
+      )
+    } else if (props.gameResult === null) {
+      return(
+      <td className='taulu'>
+        {merkki}
+        </td>
+      )
+    } else {
+      return(
+      <td className='incorrect'>
+        {merkki}
+        </td>
+      )
+    }
+  }
 
+  
 
   return (
     <div>
@@ -119,6 +118,7 @@ const App = () => {
           {persons.map(person => 
           <ShowPerson key={person.id} person={person}/>
           )}
+          <th className='taulu'>tulos</th>
         </tr>
         {data.games.map(game =>
         <ShowGamesAndRows key={game.id} game={game}/>
@@ -127,6 +127,9 @@ const App = () => {
 
     </div>
   )
+        
+        
+        
 
 }
 

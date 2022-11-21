@@ -1,14 +1,39 @@
 {
     "persons": [
       {
-        "name": "Arto Hellas",
-        "rivi": [1,1,2,0,1,1,2,2],
+        "name": "Marko",
+        "rivi": [0,1,2,0,1,1,2,1,2,1,1,1,0,1,1,1,1,2,1,0,0,1,1,1,0,1,1,0,1,0,1,0,1,2,0,2,2,2,2,2,2,0,2,2,2,2,0,2],
         "id": 1
       },
       {
-        "name": "Ada Lovelace",
-        "rivi": [1,2,1,0,0,2,2,2],
+        "name": "Kosti",
+        "rivi": [2,1,2,1,1,1,2,1,2,1,1,1,1,1,1,1,1,2,1,0,0,1,1,1,0,1,1,0,0,0,1,0,1,2,1,2,0,2,2,2,2,2,2,2,2,2,0,2],
         "id": 2
+      },
+      {
+        "name": "Musse",
+        "rivi": [0,1,2,2,1,1,1,1,2,1,1,1,0,1,1,1,1,2,1,1,0,1,1,1,0,1,1,1,0,0,1,1,1,2,1,0,2,2,2,2,2,0,2,2,2,2,2,2],
+        "id": 3
+      },
+      {
+        "name": "Tero",
+        "rivi": [2,1,2,0,1,0,2,1,0,1,1,1,2,1,1,1,0,2,1,1,0,1,1,1,0,0,0,0,1,2,1,1,1,2,2,0,0,2,2,0,2,0,2,2,2,2,0,2],
+        "id": 4
+      },
+      {
+        "name": "Tomppa",
+        "rivi": [2,1,2,1,1,1,2,1,2,1,1,1,1,1,1,1,0,2,1,1,2,1,1,1,1,1,1,2,2,1,1,1,1,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2],
+        "id": 5
+      },
+      {
+        "name": "Ilu",
+        "rivi": [0,1,0,1,1,1,1,1,2,1,1,1,0,1,1,1,0,2,1,1,1,1,2,0,1,1,1,1,1,2,1,1,1,2,2,2,2,2,2,2,2,2,2,2,0,2,2,2],
+        "id": 6
+      },
+      {
+        "name": "Juho",
+        "rivi": [2,1,2,0,1,1,1,1,2,1,1,1,1,1,1,1,1,2,2,1,0,1,1,1,0,1,1,1,1,2,1,2,1,2,2,2,2,2,2,2,1,1,2,2,2,2,2,2],
+        "id": 7
       }
     
     ],
@@ -16,18 +41,246 @@
     "games": [
         {
           "id": 0,
-          "name": "Qatar - Senegal", 
+          "name": "Qatar - Ecuador", 
           "result": 2 
         },
         {
             "id": 1,
-            "name": "England - Iran", 
+            "name": "Englanti - Iran", 
             "result": 1 
           },
           {
             "id": 2,
-            "name": "Qatar - Senegal", 
-            "result": 0 
+            "name": "Senegal - Hollanti", 
+            "result": 2 
+          },
+          {
+            "id": 3,
+            "name": "Yhdysvallat-Wales", 
+            "result": null 
+          },
+          {
+            "id": 4,
+            "name": "Argentiina-Saudi-Arabia", 
+            "result": null 
+          },
+          {
+            "id": 5,
+            "name": "Tanska-Tunisia", 
+            "result": null 
+          },
+          {
+            "id": 6,
+            "name": "Meksiko-Puola", 
+            "result": null 
+          },
+          {
+            "id": 7,
+            "name": "Ranska-Australia", 
+            "result": null 
+          },
+          {
+            "id": 8,
+            "name": "Marokko-Kroatia", 
+            "result": null 
+          },
+          {
+            "id": 9,
+            "name": "Saksa-Japani", 
+            "result": null 
+          },
+          {
+            "id": 10,
+            "name": "Espanja-Costa Rica", 
+            "result": null 
+          },
+          {
+            "id": 11,
+            "name": "Belgia-Kanada", 
+            "result": null 
+          },
+          {
+            "id": 12,
+            "name": "Sveitsi-Kamerun", 
+            "result": null 
+          },
+          {
+            "id": 13,
+            "name": "Uruguay-Etelä-Korea", 
+            "result": null 
+          },
+          {
+            "id": 14,
+            "name": "Portugali-Ghana", 
+            "result": null 
+          },
+          {
+            "id": 15,
+            "name": "Brasilia-Serbia", 
+            "result": null 
+          },
+          {
+            "id": 16,
+            "name": "Wales-Iran", 
+            "result": null 
+          },
+          {
+            "id": 17,
+            "name": "Qatar-Senegal", 
+            "result": null 
+          },
+          {
+            "id": 18,
+            "name": "Hollanti-Ecuador", 
+            "result": null 
+          },
+          {
+            "id": 19,
+            "name": "Englanti-Yhdysvallat", 
+            "result": null 
+          },
+          {
+            "id": 20,
+            "name": "Tunisia-Australia", 
+            "result": null 
+          },
+          {
+            "id": 21,
+            "name": "Puola-Saudi-Arabia", 
+            "result": null 
+          },
+          {
+            "id": 22,
+            "name": "Ranska-Tanska", 
+            "result": null 
+          },
+          {
+            "id": 23,
+            "name": "Argentiina-Meksiko", 
+            "result": null 
+          },
+          {
+            "id": 24,
+            "name": "Japani-Costa Rica", 
+            "result": null 
+          },
+          {
+            "id": 25,
+            "name": "Belgia-Marokko", 
+            "result": null 
+          },
+          {
+            "id": 26,
+            "name": "Kroatia-Kanada", 
+            "result": null 
+          },
+          {
+            "id": 27,
+            "name": "Espanja-Saksa", 
+            "result": null 
+          },
+          {
+            "id": 28,
+            "name": "Kamerun-Serbia", 
+            "result": null 
+          },
+          {
+            "id": 29,
+            "name": "Etelä-Korea-Ghana", 
+            "result": null 
+          },
+          {
+            "id": 30,
+            "name": "Brasilia-Sveitsi", 
+            "result": null 
+          },
+          {
+            "id": 31,
+            "name": "Portugali-Uruguay", 
+            "result": null 
+          },
+          {
+            "id": 32,
+            "name": "Hollanti-Qatar", 
+            "result": null 
+          },
+          {
+            "id": 33,
+            "name": "Ecuador-Senegal", 
+            "result": null 
+          },
+          {
+            "id": 34,
+            "name": "Wales-Englanti", 
+            "result": null 
+          },
+          {
+            "id": 35,
+            "name": "Iran-Yhdysvallat", 
+            "result": null 
+          },
+          {
+            "id": 36,
+            "name": "Australia-Tanska", 
+            "result": null 
+          },
+          {
+            "id": 37,
+            "name": "Tunisia-Ranska", 
+            "result": null 
+          },
+          {
+            "id": 38,
+            "name": "Puola-Argentiina", 
+            "result": null 
+          },
+          {
+            "id": 39,
+            "name": "Saudi-Arabia-Meksiko", 
+            "result": null 
+          },
+          {
+            "id": 40,
+            "name": "Kroatia-Belgia", 
+            "result": null 
+          },
+          {
+            "id": 41,
+            "name": "Kanada-Marokko", 
+            "result": null 
+          },
+          {
+            "id": 42,
+            "name": "Japani-Espanja", 
+            "result": null 
+          },
+          {
+            "id": 43,
+            "name": "Costa Rica-Saksa", 
+            "result": null 
+          },
+          {
+            "id": 44,
+            "name": "Ghana-Uruguay", 
+            "result": null 
+          },
+          {
+            "id": 45,
+            "name": "Etelä-Korea-Portugali", 
+            "result": null 
+          },
+          {
+            "id": 46,
+            "name": "Serbia-Sveitsi", 
+            "result": null 
+          },
+          {
+            "id": 47,
+            "name": "Kamerun-Brasilia", 
+            "result": null 
           }
+
+
     ]
   }
+

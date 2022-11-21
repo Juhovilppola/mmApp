@@ -1,3 +1,13 @@
 .taulu {
     border:1px solid black;
+    text-align: center;
+    width: 100%;
   }
+.correct {
+    background-color: green;
+    text-align: center;
+}
+.incorrect {
+    background-color: red;
+    text-align: center;
+}
