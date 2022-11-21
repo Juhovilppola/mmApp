@@ -120,7 +120,7 @@ const App = () => {
           <ShowPerson key={person.id} person={person}/>
           )}
         </tr>
-        {games.map(game =>
+        {data.games.map(game =>
         <ShowGamesAndRows key={game.id} game={game}/>
       )}
       </table>
