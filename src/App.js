@@ -20,8 +20,9 @@ const App = () => {
     setPersons(data.persons)
     setGames(data.games)
   }, [])
-  console.log(persons)
-  console.log(data)
+  console.log("persons", persons)
+  console.log("data", data)
+  console.log("games", games)
 
 
   const personsToShow = false
