@@ -1,0 +1,33 @@
+{
+    "persons": [
+      {
+        "name": "Arto Hellas",
+        "rivi": [1,1,2,0,1,1,2,2],
+        "id": 1
+      },
+      {
+        "name": "Ada Lovelace",
+        "rivi": [1,2,1,0,0,2,2,2],
+        "id": 2
+      }
+    
+    ],
+
+    "games": [
+        {
+          "id": 0,
+          "name": "Qatar - Senegal", 
+          "result": 2 
+        },
+        {
+            "id": 1,
+            "name": "England - Iran", 
+            "result": 1 
+          },
+          {
+            "id": 2,
+            "name": "Qatar - Senegal", 
+            "result": 0 
+          }
+    ]
+  }
