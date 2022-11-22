@@ -79,12 +79,12 @@
           {
             "id": 6,
             "name": "Meksiko-Puola", 
-            "result": null 
+            "result": 0 
           },
           {
             "id": 7,
             "name": "Ranska-Australia", 
-            "result": null 
+            "result": 1 
           },
           {
             "id": 8,
