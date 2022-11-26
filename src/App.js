@@ -106,7 +106,7 @@ const App = () => {
     if (away === null) {
       result = null
     }
-    if (game.game.Group === null) {
+    if (game.game.stage_name !== "First stage") {
       return
     }
 
