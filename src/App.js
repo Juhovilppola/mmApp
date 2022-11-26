@@ -2,7 +2,7 @@ import { useState, useEffect } from 'react'
 import data from './data.json'
 import './index.css'
 import axios from 'axios'
-import db from './db.json'
+//import db from './db.json'
 
 
 
@@ -14,25 +14,26 @@ const App = () => {
   const [persons, setPersons] = useState(
     [])
   const [games, setGames] = useState([])
+  let id = -1
 
 
   useEffect(() => {
     console.log('effect games')
-    axios
-    .get(api_url)
-    .then(response => {
-      console.log("promise fulfilled")
-      console.log(response)
-      setGames(response.data)
-      //setGames(db)
-    })
-    
-   
+       axios
+       .get(api_url)
+       .then(response => {
+         console.log("promise fulfilled")
+         console.log(response)
+         setGames(response.data)
+         
+       })
+    //setGames(db)
+
   }, [])
   useEffect(() => {
     console.log('effect')
     setPersons(data.persons)
-   
+
   }, [])
   console.log("persons", persons)
   console.log("data", data)
@@ -42,9 +43,23 @@ const App = () => {
 
   const ShowPersons = (person) => {
     let pisteet = 0
+    let merkki = ''
+    console.log("Pisteet", person.person.name)
     for (let i = 0; i < data.games.length; i++) {
-      if (person.person.rivi[i] === data.games[i].result) {
-        pisteet++
+      if (games[i].HomeTeamScore !== null) {
+        if (games[i].HomeTeamScore > games[i].AwayTeamScore) {
+          merkki = 1
+        } else if (games[i].HomeTeamScore < games[i].AwayTeamScore) {
+          merkki = 2
+        } else {
+          merkki = 0
+        }
+        console.log(merkki, person.person.rivi[i], games[i].HomeTeam)
+
+        if (person.person.rivi[i] === merkki) {
+          pisteet++
+          console.log("piste")
+        }
       }
     }
     console.log(person)
@@ -73,33 +88,35 @@ const App = () => {
 
   }
   const ShowGamesAndRows = (game) => {
+    id = id + 1
     console.log(game)
     let result = ''
     const home = game.game.HomeTeamScore
     const away = game.game.AwayTeamScore
-    if(home > away) {
+    if (home > away) {
       result = 1
     } else if (home < away) {
       result = 2
     } else {
       result = 0
     }
-    
-    
-    if(away == null) {
+
+
+
+    if (away === null) {
       result = null
     }
-    if(game.game.Group == null) {
+    if (game.game.Group === null) {
       return
     }
-  
+
     return (
       <tr>
         <td className='taulu'>
           {game.game.HomeTeam} - {game.game.AwayTeam}
         </td>
         {data.persons.map(person =>
-          <ShowPlayerResult key={person.id} player={person} gameId={game.game.MatchNumber - 1} gameResult={result} />
+          <ShowPlayerResult key={person.id} player={person} gameId={id} gameResult={result} />
         )}
         <td className='taulu'>{game.game.HomeTeamScore} - {game.game.AwayTeamScore}</td>
       </tr>
@@ -107,10 +124,12 @@ const App = () => {
 
   }
   const ShowPlayerResult = (props) => {
-    console.log(props.player)
+    console.log("tulostetaan rivit")
+    console.log(props.player.name)
     console.log(props.gameId)
     console.log(props.gameResult)
     let merkki = props.player.rivi[props.gameId]
+    console.log("merkki: " + merkki)
     if (merkki === 0) {
       merkki = 'X'
     }
@@ -140,7 +159,7 @@ const App = () => {
   return (
     <div>
       <h2>Veikkaus</h2>
-      
+
       <table className='taulu'>
         <tr className='taulu'>
           <th className='taulu'>Nimi</th>
