@@ -6,7 +6,7 @@ import axios from 'axios'
 
 
 
-const api_url = "https://fixturedownload.com/feed/json/fifa-world-cup-2022/"
+const api_url = "https://worldcupjson.net/matches"
 
 
 const App = () => {
@@ -22,9 +22,9 @@ const App = () => {
        axios
        .get(api_url)
        .then(response => {
+        setGames(response.data)
          console.log("promise fulfilled")
          console.log(response)
-         setGames(response.data)
          
        })
     //setGames(db)
@@ -45,16 +45,16 @@ const App = () => {
     let pisteet = 0
     let merkki = ''
     console.log("Pisteet", person.person.name)
-    for (let i = 0; i < data.games.length; i++) {
-      if (games[i].HomeTeamScore !== null) {
-        if (games[i].HomeTeamScore > games[i].AwayTeamScore) {
+    for (let i = 0; i < games.length; i++) {
+      if (games[i].home_team.goals !== null) {
+        if (games[i].home_team.goals > games[i].away_team.goals) {
           merkki = 1
-        } else if (games[i].HomeTeamScore < games[i].AwayTeamScore) {
+        } else if (games[i].home_team.goals < games[i].away_team.goals) {
           merkki = 2
         } else {
           merkki = 0
         }
-        console.log(merkki, person.person.rivi[i], games[i].HomeTeam)
+        console.log(merkki, person.person.rivi[i], games[i].home_team.name)
 
         if (person.person.rivi[i] === merkki) {
           pisteet++
@@ -91,8 +91,8 @@ const App = () => {
     id = id + 1
     console.log(game)
     let result = ''
-    const home = game.game.HomeTeamScore
-    const away = game.game.AwayTeamScore
+    const home = game.game.home_team.goals
+    const away = game.game.away_team.goals
     if (home > away) {
       result = 1
     } else if (home < away) {
@@ -113,12 +113,12 @@ const App = () => {
     return (
       <tr>
         <td className='taulu'>
-          {game.game.HomeTeam} - {game.game.AwayTeam}
+          {game.game.home_team.name} - {game.game.away_team.name}
         </td>
         {data.persons.map(person =>
-          <ShowPlayerResult key={person.id} player={person} gameId={id} gameResult={result} />
+          <ShowPlayerResult key={person.id} player={person} gameId={game.game.id - 1} gameResult={result} />
         )}
-        <td className='taulu'>{game.game.HomeTeamScore} - {game.game.AwayTeamScore}</td>
+        <td className='taulu'>{game.game.home_team.goals} - {game.game.away_team.goals}</td>
       </tr>
     )
 
@@ -154,7 +154,7 @@ const App = () => {
     }
   }
 
-
+if(games !== null) {
 
   return (
     <div>
@@ -187,6 +187,7 @@ const App = () => {
 
     </div>
   )
+        }
 
 
 
