@@ -1,23 +1,38 @@
 import { useState, useEffect } from 'react'
 import data from './data.json'
 import './index.css'
+import axios from 'axios'
+import db from './db.json'
 
 
 
-
+const api_url = "https://fixturedownload.com/feed/json/fifa-world-cup-2022/"
 
 
 const App = () => {
 
   const [persons, setPersons] = useState(
     [])
-  const [games, setGames] = useState('')
+  const [games, setGames] = useState([])
 
 
   useEffect(() => {
+    console.log('effect games')
+    axios
+    .get(api_url)
+    .then(response => {
+      console.log("promise fulfilled")
+      console.log(response)
+      setGames(response.data)
+      //setGames(db)
+    })
+    
+   
+  }, [])
+  useEffect(() => {
     console.log('effect')
     setPersons(data.persons)
-    setGames(data.games)
+   
   }, [])
   console.log("persons", persons)
   console.log("data", data)
@@ -59,20 +74,34 @@ const App = () => {
   }
   const ShowGamesAndRows = (game) => {
     console.log(game)
-    let merkki = game.game.result
-    console.log("merkki", merkki)
-    if(merkki === 0){
-      merkki = "X"
+    let result = ''
+    const home = game.game.HomeTeamScore
+    const away = game.game.AwayTeamScore
+    if(home > away) {
+      result = 1
+    } else if (home < away) {
+      result = 2
+    } else {
+      result = 0
     }
+    
+    
+    if(away == null) {
+      result = null
+    }
+    if(game.game.Group == null) {
+      return
+    }
+  
     return (
       <tr>
         <td className='taulu'>
-          {game.game.name}
+          {game.game.HomeTeam} - {game.game.AwayTeam}
         </td>
         {data.persons.map(person =>
-          <ShowPlayerResult key={person.id} player={person} gameId={game.game.id} gameResult={game.game.result} />
+          <ShowPlayerResult key={person.id} player={person} gameId={game.game.MatchNumber - 1} gameResult={result} />
         )}
-        <td className='taulu'>{merkki}</td>
+        <td className='taulu'>{game.game.HomeTeamScore} - {game.game.AwayTeamScore}</td>
       </tr>
     )
 
@@ -111,6 +140,7 @@ const App = () => {
   return (
     <div>
       <h2>Veikkaus</h2>
+      
       <table className='taulu'>
         <tr className='taulu'>
           <th className='taulu'>Nimi</th>
@@ -131,8 +161,8 @@ const App = () => {
           )}
           <th className='cell'>tulos</th>
         </tr>
-        {data.games.map(game =>
-          <ShowGamesAndRows key={game.id} game={game} />
+        {games.map(game =>
+          <ShowGamesAndRows key={game.MatchNumber} game={game} />
         )}
       </table>
 
