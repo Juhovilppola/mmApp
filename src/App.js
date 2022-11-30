@@ -5,18 +5,18 @@ import axios from 'axios'
 //import db from './db.json'
 
 
-
+//url mistä haetaan pelien data
 const api_url = "https://worldcupjson.net/matches"
 
 
 const App = () => {
-
+//luodaan muuttujat mitä tarvitaan
   const [persons, setPersons] = useState(
     [])
   const [games, setGames] = useState([])
-  let id = -1
+  
 
-
+// haetaan data peleistä
   useEffect(() => {
     console.log('effect games')
        axios
@@ -30,6 +30,7 @@ const App = () => {
     //setGames(db)
 
   }, [])
+  //lisätään käyttäjien data json tiedostosta
   useEffect(() => {
     console.log('effect')
     setPersons(data.persons)
@@ -40,11 +41,12 @@ const App = () => {
   console.log("games", games)
 
 
-
+//palauttaa html taulukon missä näkyy pelaajien pisteet, ja top3 joukkueet
   const ShowPersons = (person) => {
     let pisteet = 0
     let merkki = ''
     console.log("Pisteet", person.person.name)
+    //lasketaan pisteet
     for (let i = 0; i < games.length; i++) {
       if (games[i].home_team.goals !== null) {
         if (games[i].home_team.goals > games[i].away_team.goals) {
@@ -56,13 +58,14 @@ const App = () => {
         }
         console.log(merkki, person.person.rivi[i], games[i].home_team.name)
 
-        if (person.person.rivi[i] === merkki) {
+        if (person.person.rivi[games[i].id - 1] === merkki) {
           pisteet++
           console.log("piste")
         }
       }
     }
     console.log(person)
+    // palautetaan html taulukko
     return (
 
       <tr className='taulu'>
@@ -76,6 +79,7 @@ const App = () => {
     )
 
   }
+  //palauttaa pelaajan nimen
   const ShowPerson = (person) => {
 
 
@@ -87,8 +91,9 @@ const App = () => {
     )
 
   }
+  // päätaulukko jossa näkyy pelaajien rivit sekä pelien tulokset
   const ShowGamesAndRows = (game) => {
-    id = id + 1
+    // selvitetään tulos 1x2 formaattiin jossa 0 vastaa x tulosta
     console.log(game)
     let result = ''
     const home = game.game.home_team.goals
@@ -102,7 +107,7 @@ const App = () => {
     }
 
 
-
+    //peli datassa on ylimääräisiä pelejä joten hoidetaan että ne ei tulostu ja ei tulosteta alkamattomien pelien tuloksia
     if (away === null) {
       result = null
     }
@@ -123,6 +128,7 @@ const App = () => {
     )
 
   }
+  //palauttaa pelaajien veikkaukset tiettyyn peliin sekä pelin oikean tuloksen
   const ShowPlayerResult = (props) => {
     console.log("tulostetaan rivit")
     console.log(props.player.name)
@@ -130,9 +136,11 @@ const App = () => {
     console.log(props.gameResult)
     let merkki = props.player.rivi[props.gameId]
     console.log("merkki: " + merkki)
+    //pelaajien datassa x on korvatt 0 ja se muutetaan tässä
     if (merkki === 0) {
       merkki = 'X'
     }
+    //tulostetaan pelaajien veikkaukset ja eri värit sekä oikein että väärin menneille ja alkamattomille peleille.
     if (props.player.rivi[props.gameId] === props.gameResult) {
       return (
         <td className='taulu'>
