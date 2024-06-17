@@ -6,27 +6,27 @@ import axios from 'axios'
 
 
 //url mistä haetaan pelien data
-const api_url = "https://worldcupjson.net/matches"
+const api_url = "https://raw.githubusercontent.com/openfootball/euro.json/master/2024/euro.json"
 
 
 const App = () => {
-//luodaan muuttujat mitä tarvitaan
+  //luodaan muuttujat mitä tarvitaan
   const [persons, setPersons] = useState(
     [])
   const [games, setGames] = useState([])
-  
 
-// haetaan data peleistä
+
+  // haetaan data peleistä
   useEffect(() => {
     console.log('effect games')
-       axios
-       .get(api_url)
-       .then(response => {
+    axios
+      .get(api_url)
+      .then(response => {
         setGames(response.data)
-         console.log("promise fulfilled")
-         console.log(response)
-         
-       })
+        console.log("promise fulfilled")
+        console.log(response)
+
+      })
     //setGames(db)
 
   }, [])
@@ -41,7 +41,7 @@ const App = () => {
   console.log("games", games)
 
 
-//palauttaa html taulukon missä näkyy pelaajien pisteet, ja top3 joukkueet
+  //palauttaa html taulukon missä näkyy pelaajien pisteet, ja top3 joukkueet
   const ShowPersons = (person) => {
     let pisteet = 0
     let merkki = ''
@@ -111,9 +111,9 @@ const App = () => {
     if (away === null) {
       result = null
     }
-    if (game.game.stage_name !== "First stage") {
+    /*if (game.game.stage_name !== "First stage") {
       return
-    }
+    }*/
 
     return (
       <tr>
@@ -162,40 +162,40 @@ const App = () => {
     }
   }
 
-if(games !== null) {
+  if (games !== null) {
 
-  return (
-    <div>
-      <h2>Veikkaus</h2>
+    return (
+      <div>
+        <h2>Veikkaus</h2>
 
-      <table className='taulu'>
-        <tr className='taulu'>
-          <th className='taulu'>Nimi</th>
-          <th className='taulu'>Pisteet</th>
-          <th className='taulu'>1.</th>
-          <th className='taulu'>2.</th>
-          <th className='taulu'>3.</th>
-        </tr>
-        {persons.map(person =>
-          <ShowPersons key={person.id} person={person} />
-        )}
-      </table>
-      <table className='taulu'>
-        <tr className='taulu'>
-          <th className='taulu'>Peli</th>
+        <table className='taulu'>
+          <tr className='taulu'>
+            <th className='taulu'>Nimi</th>
+            <th className='taulu'>Pisteet</th>
+            <th className='taulu'>1.</th>
+            <th className='taulu'>2.</th>
+            <th className='taulu'>3.</th>
+          </tr>
           {persons.map(person =>
-            <ShowPerson key={person.id} person={person} />
+            <ShowPersons key={person.id} person={person} />
           )}
-          <th className='cell'>tulos</th>
-        </tr>
-        {games.map(game =>
-          <ShowGamesAndRows key={game.MatchNumber} game={game} />
-        )}
-      </table>
+        </table>
+        <table className='taulu'>
+          <tr className='taulu'>
+            <th className='taulu'>Peli</th>
+            {persons.map(person =>
+              <ShowPerson key={person.id} person={person} />
+            )}
+            <th className='cell'>tulos</th>
+          </tr>
+          {games.map(game =>
+            <ShowGamesAndRows key={game.MatchNumber} game={game} />
+          )}
+        </table>
 
-    </div>
-  )
-        }
+      </div>
+    )
+  }
 
 
 
