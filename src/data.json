@@ -48,245 +48,185 @@
     "games": [
         {
           "id": 0,
-          "name": "Qatar - Ecuador", 
-          "result": 2 
+          "name": "Saksa – Skotlanti", 
+          "result": 1 
         },
         {
             "id": 1,
-            "name": "Englanti - Iran", 
-            "result": 1 
-          },
-          {
-            "id": 2,
-            "name": "Senegal - Hollanti", 
+            "name": "Unkari – Sveitsi", 
             "result": 2 
           },
           {
+            "id": 2,
+            "name": "Espanja – Kroatia", 
+            "result": 1 
+          },
+          {
             "id": 3,
-            "name": "Yhdysvallat-Wales", 
-            "result": 0 
+            "name": "Italia – Albania", 
+            "result": 1 
           },
           {
             "id": 4,
-            "name": "Argentiina-Saudi-Arabia", 
+            "name": "Puola – Hollanti", 
             "result": 2 
           },
           {
             "id": 5,
-            "name": "Tanska-Tunisia", 
+            "name": "Slovenia – Tanska,", 
             "result": 0 
           },
           {
             "id": 6,
-            "name": "Meksiko-Puola", 
-            "result": 0 
+            "name": "Serbia – Englanti", 
+            "result": 2 
           },
           {
             "id": 7,
-            "name": "Ranska-Australia", 
+            "name": "Romania – Ukraina", 
             "result": 1 
           },
           {
             "id": 8,
-            "name": "Marokko-Kroatia", 
-            "result": 0 
+            "name": "Belgia – Slovakia", 
+            "result": null 
           },
           {
             "id": 9,
-            "name": "Saksa-Japani", 
-            "result": 2 
+            "name": "Itävalta – Ranska", 
+            "result": null 
           },
           {
             "id": 10,
-            "name": "Espanja-Costa Rica", 
-            "result": 1 
+            "name": "Turkki – Georgia", 
+            "result": null 
           },
           {
             "id": 11,
-            "name": "Belgia-Kanada", 
-            "result": 1 
+            "name": "Portugali – Tshekki", 
+            "result": null 
           },
           {
             "id": 12,
-            "name": "Sveitsi-Kamerun", 
-            "result": 1 
+            "name": "Kroatia – Albania", 
+            "result": null 
           },
           {
             "id": 13,
-            "name": "Uruguay-Etelä-Korea", 
-            "result": 0 
+            "name": "Saksa – Unkari", 
+            "result": null 
           },
           {
             "id": 14,
-            "name": "Portugali-Ghana", 
-            "result": 1 
+            "name": "Skotlanti – Sveitsi", 
+            "result": null 
           },
           {
             "id": 15,
-            "name": "Brasilia-Serbia", 
-            "result": 1 
+            "name": "Slovenia – Serbia", 
+            "result": null 
           },
           {
             "id": 16,
-            "name": "Wales-Iran", 
-            "result": 2 
+            "name": "Tanska – Englanti", 
+            "result": null 
           },
           {
             "id": 17,
-            "name": "Qatar-Senegal", 
-            "result": 2 
+            "name": "Espanja – Italia", 
+            "result": null 
           },
           {
             "id": 18,
-            "name": "Hollanti-Ecuador", 
-            "result": 0 
+            "name": "Slovakia – Ukraina", 
+            "result": null 
           },
           {
             "id": 19,
-            "name": "Englanti-Yhdysvallat", 
-            "result": 0 
+            "name": "Puola – Itävalta", 
+            "result": null 
           },
           {
             "id": 20,
-            "name": "Tunisia-Australia", 
+            "name": "Hollanti – Ranska", 
             "result": null 
           },
           {
             "id": 21,
-            "name": "Puola-Saudi-Arabia", 
+            "name": "Georgia – Tshekki", 
             "result": null 
           },
           {
             "id": 22,
-            "name": "Ranska-Tanska", 
+            "name": "Turkki – Portugali", 
             "result": null 
           },
           {
             "id": 23,
-            "name": "Argentiina-Meksiko", 
+            "name": "Belgia – Romania", 
             "result": null 
           },
           {
             "id": 24,
-            "name": "Japani-Costa Rica", 
+            "name": "Sveitsi – Saksa", 
             "result": null 
           },
           {
             "id": 25,
-            "name": "Belgia-Marokko", 
+            "name": "Skotlanti – Unkari", 
             "result": null 
           },
           {
             "id": 26,
-            "name": "Kroatia-Kanada", 
+            "name": "Kroatia – Italia", 
             "result": null 
           },
           {
             "id": 27,
-            "name": "Espanja-Saksa", 
+            "name": "Albania – Espanja", 
             "result": null 
           },
           {
             "id": 28,
-            "name": "Kamerun-Serbia", 
+            "name": "Hollanti – Itävalta", 
             "result": null 
           },
           {
             "id": 29,
-            "name": "Etelä-Korea-Ghana", 
+            "name": "Ranska – Puola", 
             "result": null 
           },
           {
             "id": 30,
-            "name": "Brasilia-Sveitsi", 
+            "name": "Englanti – Slovenia", 
             "result": null 
           },
           {
             "id": 31,
-            "name": "Portugali-Uruguay", 
+            "name": "Tanska – Serbia", 
             "result": null 
           },
           {
             "id": 32,
-            "name": "Hollanti-Qatar", 
+            "name": "Slovakia – Romania", 
             "result": null 
           },
           {
             "id": 33,
-            "name": "Ecuador-Senegal", 
+            "name": "Ukraina – Belgia", 
             "result": null 
           },
           {
             "id": 34,
-            "name": "Wales-Englanti", 
+            "name": "Tshekki – Turkki", 
             "result": null 
           },
           {
             "id": 35,
-            "name": "Iran-Yhdysvallat", 
-            "result": null 
-          },
-          {
-            "id": 36,
-            "name": "Australia-Tanska", 
-            "result": null 
-          },
-          {
-            "id": 37,
-            "name": "Tunisia-Ranska", 
-            "result": null 
-          },
-          {
-            "id": 38,
-            "name": "Puola-Argentiina", 
-            "result": null 
-          },
-          {
-            "id": 39,
-            "name": "Saudi-Arabia-Meksiko", 
-            "result": null 
-          },
-          {
-            "id": 40,
-            "name": "Kroatia-Belgia", 
-            "result": null 
-          },
-          {
-            "id": 41,
-            "name": "Kanada-Marokko", 
-            "result": null 
-          },
-          {
-            "id": 42,
-            "name": "Japani-Espanja", 
-            "result": null 
-          },
-          {
-            "id": 43,
-            "name": "Costa Rica-Saksa", 
-            "result": null 
-          },
-          {
-            "id": 44,
-            "name": "Ghana-Uruguay", 
-            "result": null 
-          },
-          {
-            "id": 45,
-            "name": "Etelä-Korea-Portugali", 
-            "result": null 
-          },
-          {
-            "id": 46,
-            "name": "Serbia-Sveitsi", 
-            "result": null 
-          },
-          {
-            "id": 47,
-            "name": "Kamerun-Brasilia", 
+            "name": "Georgia – Portugali", 
             "result": null 
           }
-
+         
 
     ]
   }

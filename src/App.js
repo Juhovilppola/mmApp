@@ -15,14 +15,25 @@ const App = () => {
     [])
   const [games, setGames] = useState([])
 
+  //let tempgames = []
+  //const [games2, setGames2] = useState([])
+  //const [games3, setGames3] = useState([])
 
+  //let array = []
   // haetaan data peleistä
   useEffect(() => {
     console.log('effect games')
     axios
       .get(api_url)
       .then(response => {
-        setGames(response.data)
+        //tempgames = games.concat(response.data.rounds[0], response.data.rounds[1], response.data.rounds[2])
+
+        //setGames(response.data.rounds)
+        //array = array.concat(response.data.rounds[0].matches, response.data.rounds[1].matches, response.data.rounds[2].matches)
+        //array.sort((a, b) => a.time - b.time)
+        setGames(data.games)
+
+
         console.log("promise fulfilled")
         console.log(response)
 
@@ -48,19 +59,22 @@ const App = () => {
     console.log("Pisteet", person.person.name)
     //lasketaan pisteet
     for (let i = 0; i < games.length; i++) {
-      if (games[i].home_team.goals !== null) {
-        if (games[i].home_team.goals > games[i].away_team.goals) {
+      if (games[i].result !== null) {
+        /*console.log(games[i].score.ft)
+        console.log('lol')
+        if (games[i].score.ft[0] > games[i].score.ft[1]) {
           merkki = 1
-        } else if (games[i].home_team.goals < games[i].away_team.goals) {
+        } else if (games[i].score.ft[0] < games[i].score.ft[1]) {
           merkki = 2
         } else {
           merkki = 0
         }
-        console.log(merkki, person.person.rivi[i], games[i].home_team.name)
+        console.log(merkki, person.person.rivi[i], games[i].team1)*/
 
-        if (person.person.rivi[games[i].id - 1] === merkki) {
+        if (person.person.rivi[i] === games[i].result) {
           pisteet++
           console.log("piste")
+          console.log(games[i].name)
         }
       }
     }
@@ -95,35 +109,49 @@ const App = () => {
   const ShowGamesAndRows = (game) => {
     // selvitetään tulos 1x2 formaattiin jossa 0 vastaa x tulosta
     console.log(game)
-    let result = ''
-    const home = game.game.home_team.goals
-    const away = game.game.away_team.goals
-    if (home > away) {
-      result = 1
-    } else if (home < away) {
-      result = 2
+    console.log('peliä')
+    let result = game.game.result
+    /*let home = 0
+    let away = 0
+    if (!game.game.score.ft) {
+      result = null
+
     } else {
-      result = 0
-    }
+
+      home = game.game.score.ft[0]
+      away = game.game.score.ft[1]
+      if (home > away) {
+        result = 1
+      } else if (home < away) {
+        result = 2
+      } else {
+        result = 0
+      }
+    }*/
 
 
     //peli datassa on ylimääräisiä pelejä joten hoidetaan että ne ei tulostu ja ei tulosteta alkamattomien pelien tuloksia
-    if (away === null) {
-      result = null
-    }
+    /* if (away === null) {
+       result = null
+     }*/
     /*if (game.game.stage_name !== "First stage") {
       return
     }*/
+    if (result == null) {
+      result = '-'
+    } else if (result == 0) {
+      result = 'X'
+    }
 
     return (
       <tr>
         <td className='taulu'>
-          {game.game.home_team.name} - {game.game.away_team.name}
+          {game.game.name}
         </td>
         {data.persons.map(person =>
-          <ShowPlayerResult key={person.id} player={person} gameId={game.game.id - 1} gameResult={result} />
+          <ShowPlayerResult key={person.id} player={person} gameId={game.game.id} gameResult={game.game.result} />
         )}
-        <td className='taulu'>{game.game.home_team.goals} - {game.game.away_team.goals}</td>
+        <td className='taulu'>{result}</td>
       </tr>
     )
 
@@ -189,7 +217,7 @@ const App = () => {
             <th className='cell'>tulos</th>
           </tr>
           {games.map(game =>
-            <ShowGamesAndRows key={game.MatchNumber} game={game} />
+            <ShowGamesAndRows key={game.id} game={game} />
           )}
         </table>
 
