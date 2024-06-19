@@ -99,22 +99,22 @@
           {
             "id": 10,
             "name": "Turkki – Georgia", 
-            "result": null 
+            "result": 1 
           },
           {
             "id": 11,
             "name": "Portugali – Tshekki", 
-            "result": null 
+            "result": 1
           },
           {
             "id": 12,
             "name": "Kroatia – Albania", 
-            "result": null 
+            "result": 0
           },
           {
             "id": 13,
             "name": "Saksa – Unkari", 
-            "result": null 
+            "result": 1 
           },
           {
             "id": 14,
