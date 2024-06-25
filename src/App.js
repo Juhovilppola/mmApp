@@ -88,6 +88,7 @@ const App = () => {
         <td className='taulu'>{person.person.top3[0]}</td>
         <td className='taulu'>{person.person.top3[1]}</td>
         <td className='taulu'>{person.person.top3[2]}</td>
+        <td className='taulu'>{person.person.top3[3]}</td>
       </tr>
 
     )
