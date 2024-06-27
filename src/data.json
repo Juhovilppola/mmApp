@@ -209,22 +209,22 @@
           {
             "id": 32,
             "name": "Slovakia – Romania", 
-            "result": null 
+            "result": 0
           },
           {
             "id": 33,
             "name": "Ukraina – Belgia", 
-            "result": null 
+            "result": 0 
           },
           {
             "id": 34,
             "name": "Georgia - Portugali", 
-            "result": null 
+            "result": 1 
           },
           {
             "id": 35,
             "name": "Tshekki – Turkki", 
-            "result": null 
+            "result": 2 
           }
          
 
