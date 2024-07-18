@@ -75,6 +75,9 @@ const App = () => {
           pisteet++
           console.log("piste")
           console.log(games[i].name)
+          if (person.person.name === "Tomppa") {
+            pisteet = 0 
+            }
         }
       }
     }
