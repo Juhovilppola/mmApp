@@ -2,230 +2,411 @@
     "persons": [
       {
         "name": "Marko",
-        "rivi": [1,0,1,0,0,2,2,2,1,2,0,1,1,1,2,0,2,1,2,1,2,2,2,1,2,0,2,0,0,1,1,1,0,2,2,1],
+        "rivi": [1,0,0,2,0,2,2,1,1,1,1,1,2,1,1,1,2,1,1,1,1,1,0,2,1,1,1,1,1,0,0,1,0,1,2,1,0,1,1,2,0,1,2,1,1,2,1,0,0,1,2,1,2,2,2,2,0,2,0,1,2,1,0,2,0,2,2,0,0,2,0,0],
         "id": 1,
-        "top3": ["Ranska", "Englanti", "Saksa","Portugali"]
+        "top3": ["Espanja", "Argentiina", "Ranska"]
       },
       {
         "name": "Kosti",
-        "rivi": [1,2,0,1,0,2,2,2,1,2,1,1,1,1,2,0,2,1,1,0,2,2,2,1,0,1,2,1,1,1,1,2,0,2,2,1],
+        "rivi": [1,2,0,2,0,2,2,1,1,1,0,0,1,2,1,0,1,1,2,1,1,1,1,2,1,0,1,1,1,0,0,1,1,1,2,1,1,1,1,2,2,1,2,1,1,2,1,1,1,1,2,1,2,2,2,2,2,2,1,2,2,1,1,2,2,2,2,1,2,2,2,0],
         "id": 2,
-        "top3": ["Englanti", "Ranska", "Portugali","Saksa"]
+        "top3": ["Englanti", "Ranska", "Espanja"]
       },
       {
         "name": "Musse",
-        "rivi": [1,2,1,1,2,2,2,2,1,2,1,1,1,1,2,2,2,1,2,0,2,2,2,1,2,2,2,2,1,1,1,1,0,2,2,1],
+        "rivi": [0,0,1,2,1,2,2,1,1,1,0,1,1,2,1,1,1,1,2,1,1,0,1,1,2,1,1,1,1,2,0,1,1,1,2,1,1,1,1,2,0,1,2,1,1,2,1,0,0,1,2,1,2,2,2,2,0,2,0,1,2,1,0,2,0,2,2,1,0,2,2,0],
         "id": 3,
-        "top3": ["Englanti", "Ranska", "Portugali","Espanja"]
+        "top3": ["Ranska", "Argentiina", "Brasilia"]
       },
       {
         "name": "Tero",
-        "rivi": [1,2,1,1,2,0,2,0,1,2,1,1,0,1,2,1,2,0,0,0,0,2,2,1,2,0,2,0,1,1,1,2,1,0,2,0],
+        "rivi": [0,0,1,2,2,2,0,0,1,0,0,2,1,2,1,0,1,1,0,1,0,1,1,2,2,2,0,0,1,2,0,1,1,1,2,1,1,1,1,2,0,1,2,1,1,2,1,0,0,1,2,1,0,2,0,2,0,2,1,0,0,1,0,2,2,2,2,0,1,2,2,0],
         "id": 4,
-        "top3": ["Engalnti", "Portugali", "Ranska", "Italia"]
+        "top3": ["Argentiina", "Espanja", "Ranska"]
       },
       {
         "name": "Tomppa",
-        "rivi": [1,2,1,1,2,2,2,2,1,2,1,1,1,1,2,2,2,1,2,0,2,2,2,1,2,2,2,2,1,1,1,1,1,2,2,1],
+        "rivi": [1,1,1,2,1,2,2,1,1,1,2,0,1,2,1,1,1,1,2,1,1,1,1,1,2,1,1,1,1,2,1,1,1,1,2,1,1,1,1,2,1,1,2,1,1,2,1,0,0,1,2,1,2,2,2,2,1,2,2,1,2,1,1,2,1,2,2,1,2,2,2,1],
         "id": 5,
-        "top3": ["Ranska", "Englanti", "Saksa","Portugali"]
+        "top3": ["Espanja", "Ranska", "Englanti"]
       },
       {
         "name": "Ilari",
-        "rivi": [1,0,1,1,2,2,2,1,1,2,0,1,1,1,2,2,2,0,1,1,2,0,2,1,0,2,2,2,1,1,1,1,2,2,2,0],
+        "rivi": [1,2,1,2,0,2,2,1,1,1,0,1,1,2,0,1,1,1,2,1,1,1,1,1,2,0,1,1,1,2,0,1,1,1,2,1,1,1,1,0,2,1,2,1,1,2,1,1,1,0,2,1,2,1,2,2,2,2,2,1,2,1,1,2,0,2,2,2,0,2,2,1],
         "id": 6,
-        "top3": ["Italia", "Ranska", "Englanti","Espanja"]
+        "top3": ["Ranska", "Espanja", "Brazil"]
       },
       {
         "name": "Juho",
-        "rivi": [1,2,1,1,2,1,2,2,1,2,1,1,1,1,0,0,2,1,0,1,2,2,2,1,2,1,2,0,1,1,1,2,1,2,2,0],
+        "rivi": [1,0,1,2,1,2,2,1,1,1,1,0,1,2,2,1,1,1,2,1,1,1,1,1,2,1,1,1,1,2,2,1,1,1,2,1,1,1,1,0,0,1,2,1,1,2,1,1,1,1,2,1,0,1,2,2,1,2,2,1,2,1,1,2,2,2,2,1,2,2,2,1],
         "id": 7,
-        "top3": ["Ranska", "Espanja", "Saksa","Portugali"]
+        "top3": ["Espanja", "Brasilia", "Portugali"]
       }
     
     ],
 
     "games": [
         {
-          "id": 0,
-          "name": "Saksa – Skotlanti", 
-          "result":  null
-        },
-        {
-            "id": 1,
-            "name": "Unkari – Sveitsi", 
-            "result": 2 
-          },
-          {
-            "id": 2,
-            "name": "Espanja – Kroatia", 
-            "result": 1 
-          },
-          {
-            "id": 3,
-            "name": "Italia – Albania", 
-            "result": 1 
-          },
-          {
-            "id": 4,
-            "name": "Puola – Hollanti", 
-            "result": 2 
-          },
-          {
-            "id": 5,
-            "name": "Slovenia – Tanska,", 
-            "result": 0 
-          },
-          {
-            "id": 6,
-            "name": "Serbia – Englanti", 
-            "result": 2 
-          },
-          {
-            "id": 7,
-            "name": "Romania – Ukraina", 
-            "result": 1 
-          },
-          {
-            "id": 8,
-            "name": "Belgia – Slovakia", 
-            "result": 2
-          },
-          {
-            "id": 9,
-            "name": "Itävalta – Ranska", 
-            "result": 2 
-          },
-          {
-            "id": 10,
-            "name": "Turkki – Georgia", 
-            "result": 1 
-          },
-          {
-            "id": 11,
-            "name": "Portugali – Tshekki", 
-            "result": 1
-          },
-          {
-            "id": 12,
-            "name": "Kroatia – Albania", 
-            "result": 0
-          },
-          {
-            "id": 13,
-            "name": "Saksa – Unkari", 
-            "result": 1 
-          },
-          {
-            "id": 14,
-            "name": "Skotlanti – Sveitsi", 
-            "result": 0 
-          },
-          {
-            "id": 15,
-            "name": "Slovenia – Serbia", 
-            "result": 0 
-          },
-          {
-            "id": 16,
-            "name": "Tanska – Englanti", 
-            "result": 0 
-          },
-          {
-            "id": 17,
-            "name": "Espanja – Italia", 
-            "result": 1
-          },
-          {
-            "id": 18,
-            "name": "Slovakia – Ukraina", 
-            "result": 2 
-          },
-          {
-            "id": 19,
-            "name": "Puola – Itävalta", 
-            "result": 2 
-          },
-          {
-            "id": 20,
-            "name": "Hollanti – Ranska", 
-            "result": 0 
-          },
-          {
-            "id": 21,
-            "name": "Georgia – Tshekki", 
-            "result": 0 
-          },
-          {
-            "id": 22,
-            "name": "Turkki – Portugali", 
-            "result": 2
-          },
-          {
-            "id": 23,
-            "name": "Belgia – Romania", 
-            "result": 1 
-          },
-          {
-            "id": 24,
-            "name": "Sveitsi – Saksa", 
-            "result": 0 
-          },
-          {
-            "id": 25,
-            "name": "Skotlanti – Unkari", 
-            "result": 2 
-          },
-          {
-            "id": 26,
-            "name": "Albania – Espanja", 
-            "result": 2
-          },
-          {
-            "id": 27,
-            "name": "Kroatia – Italia", 
-            "result": 0
-          },
-          {
-            "id": 28,
-            "name": "Hollanti – Itävalta", 
-            "result": 2 
-          },
-          {
-            "id": 29,
-            "name": "Ranska – Puola", 
-            "result": 0 
-          },
-          {
-            "id": 30,
-            "name": "Englanti – Slovenia", 
-            "result": 0 
-          },
-          {
-            "id": 31,
-            "name": "Tanska – Serbia", 
-            "result": 0 
-          },
-          {
-            "id": 32,
-            "name": "Slovakia – Romania", 
-            "result": 0
-          },
-          {
-            "id": 33,
-            "name": "Ukraina – Belgia", 
-            "result": 0 
-          },
-          {
-            "id": 34,
-            "name": "Georgia - Portugali", 
-            "result": 1 
-          },
-          {
-            "id": 35,
-            "name": "Tshekki – Turkki", 
-            "result": 2 
-          }
+          
+    "id": 0,
+    "name": "Meksiko – Etelä-Afrikka",
+    "result": 1
+  },
+  {
+    "id": 1,
+    "name": "Etelä-Korea – Tshekki",
+    "result": null
+  },
+  {
+    "id": 2,
+    "name": "Kanada – Bosnia ja Hertsegovina",
+    "result": null
+  },
+  {
+    "id": 3,
+    "name": "USA – Paraguay",
+    "result": null
+  },
+  {
+    "id": 4,
+    "name": "Qatar – Sveitsi",
+    "result": null
+  },
+  {
+    "id": 5,
+    "name": "Brasilia – Marokko",
+    "result": null
+  },
+  {
+    "id": 6,
+    "name": "Haiti – Skotlanti",
+    "result": null
+  },
+  {
+    "id": 7,
+    "name": "Australia – Turkki",
+    "result": null
+  },
+  {
+    "id": 8,
+    "name": "Saksa – Curacao",
+    "result": null
+  },
+  {
+    "id": 9,
+    "name": "Hollanti – Japani",
+    "result": null
+  },
+  {
+    "id": 10,
+    "name": "Norsunluurannikko – Ecuador",
+    "result": null
+  },
+  {
+    "id": 11,
+    "name": "Ruotsi – Tunisia",
+    "result": null
+  },
+  {
+    "id": 12,
+    "name": "Espanja – Kap Verde",
+    "result": null
+  },
+  {
+    "id": 13,
+    "name": "Belgia – Egypti",
+    "result": null
+  },
+  {
+    "id": 14,
+    "name": "Saudi-Arabia – Uruguay",
+    "result": null
+  },
+  {
+    "id": 15,
+    "name": "Iran – Uusi-Seelanti",
+    "result": null
+  },
+  {
+    "id": 16,
+    "name": "Ranska – Senegal",
+    "result": null
+  },
+  {
+    "id": 17,
+    "name": "Irak – Norja",
+    "result": null
+  },
+  {
+    "id": 18,
+    "name": "Argentiina – Algeria",
+    "result": null
+  },
+  {
+    "id": 19,
+    "name": "Itävalta – Jordania",
+    "result": null
+  },
+  {
+    "id": 20,
+    "name": "Portugali – DR Kongo",
+    "result": null
+  },
+  {
+    "id": 21,
+    "name": "Englanti – Kroatia",
+    "result": null
+  },
+  {
+    "id": 22,
+    "name": "Ghana – Panama",
+    "result": null
+  },
+  {
+    "id": 23,
+    "name": "Uzbekistan – Kolumbia",
+    "result": null
+  },
+  {
+    "id": 24,
+    "name": "Tshekki – Etelä-Afrikka",
+    "result": null
+  },
+  {
+    "id": 25,
+    "name": "Sveitsi – Bosnia ja Hertsegovina",
+    "result": null
+  },
+  {
+    "id": 26,
+    "name": "Kanada – Qatar",
+    "result": null
+  },
+  {
+    "id": 27,
+    "name": "Meksiko – Etelä-Korea",
+    "result": null
+  },
+  {
+    "id": 28,
+    "name": "USA – Australia",
+    "result": null
+  },
+  {
+    "id": 29,
+    "name": "Skotlanti – Marokko",
+    "result": null
+  },
+  {
+    "id": 30,
+    "name": "Brasilia – Haiti",
+    "result": null
+  },
+  {
+    "id": 31,
+    "name": "Turkki – Paraguay",
+    "result": null
+  },
+  {
+    "id": 32,
+    "name": "Hollanti – Ruotsi",
+    "result": null
+  },
+  {
+    "id": 33,
+    "name": "Saksa – Norsunluurannikko",
+    "result": null
+  },
+  {
+    "id": 34,
+    "name": "Ecuador – Curacao",
+    "result": null
+  },
+  {
+    "id": 35,
+    "name": "Tunisia – Japani",
+    "result": null
+  },
+  {
+    "id": 36,
+    "name": "Espanja – Saudi-Arabia",
+    "result": null
+  },
+   {
+    "id": 37,
+    "name": "Belgia – Iran",
+    "result": null
+  },
+  {
+    "id": 38,
+    "name": "Uruguay – Kap Verde",
+    "result": null
+  },
+  {
+    "id": 39,
+    "name": "Uusi-Seelanti – Egypti",
+    "result": null
+  },
+  {
+    "id": 40,
+    "name": "Argentiina – Itävalta",
+    "result": null
+  },
+  {
+    "id": 41,
+    "name": "Ranska – Irak",
+    "result": null
+  },
+  {
+    "id": 42,
+    "name": "Norja – Senegal",
+    "result": null
+  },
+  {
+    "id": 43,
+    "name": "Jordania – Algeria",
+    "result": null
+  },
+  {
+    "id": 44,
+    "name": "Portugali – Uzbekistan",
+    "result": null
+  },
+  {
+    "id": 45,
+    "name": "Englanti – Ghana",
+    "result": null
+  },
+  {
+    "id": 46,
+    "name": "Panama – Kroatia",
+    "result": null
+  },
+  {
+    "id": 47,
+    "name": "Kolumbia – DR Kongo",
+    "result": null
+  },
+  {
+    "id": 48,
+    "name": "Bosnia ja Hertsegovina – Qatar",
+    "result": null
+  },
+  {
+    "id": 49,
+    "name": "Sveitsi – Kanada",
+    "result": null
+  },
+  {
+    "id": 50,
+    "name": "Marokko – Haiti",
+    "result": null
+  },
+  {
+    "id": 51,
+    "name": "Skotlanti – Brasilia",
+    "result": null
+  },
+  {
+    "id": 52,
+    "name": "Etelä-Afrikka – Etelä-Korea",
+    "result": null
+  },
+  {
+    "id": 53,
+    "name": "Tshekki – Meksiko",
+    "result": null
+  },
+  {
+    "id": 54,
+    "name": "Curacao – Norsunluurannikko",
+    "result": null
+  },
+  {
+    "id": 55,
+    "name": "Ecuador – Saksa",
+    "result": null
+  },
+  {
+    "id": 56,
+    "name": "Japani – Ruotsi",
+    "result": null
+  },
+  {
+    "id": 57,
+    "name": "Tunisia – Hollanti",
+    "result": null
+  },
+  {
+    "id": 58,
+    "name": "Paraguay – Australia",
+    "result": null
+  },
+  {
+    "id": 59,
+    "name": "Turkki – USA",
+    "result": null
+  },
+  {
+    "id": 60,
+    "name": "Norja – Ranska",
+    "result": null
+  },
+  {
+    "id": 61,
+    "name": "Senegal – Irak",
+    "result": null
+  },
+  {
+    "id": 62,
+    "name": "Kap Verde – Saudi-Arabia",
+    "result": null
+  },
+  {
+    "id": 63,
+    "name": "Uruguay – Espanja",
+    "result": null
+  },
+  {
+    "id": 64,
+    "name": "Egypti – Iran",
+    "result": null
+  },
+  {
+    "id": 65,
+    "name": "Uusi-Seelanti – Belgia",
+    "result": null
+  },
+  {
+    "id": 66,
+    "name": "Kroatia – Ghana",
+    "result": null
+  },
+  {
+    "id": 67,
+    "name": "Panama – Englanti",
+    "result": null
+  },
+  {
+    "id": 68,
+    "name": "DR Kongo – Uzbekistan",
+    "result": null
+  },
+  {
+    "id": 69,
+    "name": "Kolumbia – Portugali",
+    "result": null
+  },
+  {
+    "id": 70,
+    "name": "Algeria – Itävalta",
+    "result": null
+  },
+  {
+    "id": 71,
+    "name": "Jordania – Argentiina",
+    "result": null
+  }
          
 
     ]
