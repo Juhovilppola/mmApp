@@ -76,8 +76,8 @@ const App = () => {
           console.log("piste")
           console.log(games[i].name)
           if (person.person.name != "Juho") {
-            pisteet = 0 
-            }
+            pisteet = 0
+          }
         }
       }
     }
@@ -198,7 +198,7 @@ const App = () => {
 
     return (
       <div>
-        <h2>Paska peli</h2>
+        <h2>MM app</h2>
 
         <table className='taulu'>
           <tr className='taulu'>
