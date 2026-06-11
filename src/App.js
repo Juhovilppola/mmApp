@@ -21,17 +21,17 @@ const App = () => {
 
   //let array = []
   // haetaan data peleistä
-  useEffect(() => {
+  /*useEffect(() => {
     console.log('effect games')
     axios
       .get(api_url)
       .then(response => {
         //tempgames = games.concat(response.data.rounds[0], response.data.rounds[1], response.data.rounds[2])
 
-        //setGames(response.data.rounds)
+        setGames(response.data.games)
         //array = array.concat(response.data.rounds[0].matches, response.data.rounds[1].matches, response.data.rounds[2].matches)
         //array.sort((a, b) => a.time - b.time)
-        setGames(data.games)
+        //setGames(data.games)
 
 
         console.log("promise fulfilled")
@@ -40,11 +40,12 @@ const App = () => {
       })
     //setGames(db)
 
-  }, [])
+  }, [])*/
   //lisätään käyttäjien data json tiedostosta
   useEffect(() => {
     console.log('effect')
     setPersons(data.persons)
+    setGames(data.games)
 
   }, [])
   console.log("persons", persons)
@@ -117,9 +118,9 @@ const App = () => {
     let away = 0
     if (!game.game.score.ft) {
       result = null
-
+ 
     } else {
-
+ 
       home = game.game.score.ft[0]
       away = game.game.score.ft[1]
       if (home > away) {
