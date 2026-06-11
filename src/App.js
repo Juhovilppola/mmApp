@@ -75,9 +75,7 @@ const App = () => {
           pisteet++
           console.log("piste")
           console.log(games[i].name)
-          if (person.person.name != "Juho") {
-            pisteet = 0
-          }
+
         }
       }
     }
