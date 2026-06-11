@@ -6,7 +6,7 @@ import axios from 'axios'
 
 
 //url mistä haetaan pelien data
-const api_url = "https://raw.githubusercontent.com/openfootball/euro.json/master/2024/euro.json"
+const api_url = "https://raw.githubusercontent.com/openfootball/worldcup.json/master/2026/worldcup.json"
 
 
 const App = () => {
