@@ -55,7 +55,7 @@ const App = () => {
   //palauttaa html taulukon missä näkyy pelaajien pisteet, ja top3 joukkueet
   const ShowPersons = (person) => {
     let pisteet = 0
-    let merkki = ''
+    //let merkki = ''
     console.log("Pisteet", person.person.name)
     //lasketaan pisteet
     for (let i = 0; i < games.length; i++) {
@@ -141,7 +141,7 @@ const App = () => {
     }*/
     if (result == null) {
       result = '-'
-    } else if (result == 0) {
+    } else if (result === 0) {
       result = 'X'
     }
 
