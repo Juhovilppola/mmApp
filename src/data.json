@@ -46,115 +46,114 @@
     ],
 
     "games": [
-        {
-          
+       {
     "id": 0,
-    "name": "Meksiko – Etelä-Afrikka",
+    "name": "Mexico – South Africa",
     "result": 1
   },
   {
     "id": 1,
-    "name": "Etelä-Korea – Tshekki",
-    "result": null
+    "name": "South Korea – Czechia",
+    "result": 1
   },
   {
     "id": 2,
-    "name": "Kanada – Bosnia ja Hertsegovina",
+    "name": "Canada – Bosnia and Herzegovina",
     "result": null
   },
   {
     "id": 3,
-    "name": "USA – Paraguay",
+    "name": "Qatar – Switzerland",
     "result": null
   },
   {
     "id": 4,
-    "name": "Qatar – Sveitsi",
+    "name": "USA – Paraguay",
     "result": null
   },
   {
     "id": 5,
-    "name": "Brasilia – Marokko",
+    "name": "Haiti – Scotland",
     "result": null
   },
   {
     "id": 6,
-    "name": "Haiti – Skotlanti",
+    "name": "Australia – Türkiye",
     "result": null
   },
   {
     "id": 7,
-    "name": "Australia – Turkki",
+    "name": "Brazil – Morocco",
     "result": null
   },
   {
     "id": 8,
-    "name": "Saksa – Curacao",
+    "name": "Germany – Curaçao",
     "result": null
   },
   {
     "id": 9,
-    "name": "Hollanti – Japani",
+    "name": "Netherlands – Japan",
     "result": null
   },
   {
     "id": 10,
-    "name": "Norsunluurannikko – Ecuador",
+    "name": "Ivory Coast – Ecuador",
     "result": null
   },
   {
     "id": 11,
-    "name": "Ruotsi – Tunisia",
+    "name": "Sweden – Tunisia",
     "result": null
   },
   {
     "id": 12,
-    "name": "Espanja – Kap Verde",
+    "name": "Spain – Cape Verde",
     "result": null
   },
   {
     "id": 13,
-    "name": "Belgia – Egypti",
+    "name": "Saudi Arabia – Uruguay",
     "result": null
   },
   {
     "id": 14,
-    "name": "Saudi-Arabia – Uruguay",
+    "name": "Iran – New Zealand",
     "result": null
   },
   {
     "id": 15,
-    "name": "Iran – Uusi-Seelanti",
+    "name": "Belgium – Egypt",
     "result": null
   },
   {
     "id": 16,
-    "name": "Ranska – Senegal",
+    "name": "France – Senegal",
     "result": null
   },
   {
     "id": 17,
-    "name": "Irak – Norja",
+    "name": "Iraq – Norway",
     "result": null
   },
   {
     "id": 18,
-    "name": "Argentiina – Algeria",
+    "name": "Argentina – Algeria",
     "result": null
   },
   {
     "id": 19,
-    "name": "Itävalta – Jordania",
+    "name": "Austria – Jordan",
     "result": null
   },
   {
     "id": 20,
-    "name": "Portugali – DR Kongo",
+    "name": "England – Croatia",
     "result": null
   },
   {
     "id": 21,
-    "name": "Englanti – Kroatia",
+    "name": "Portugal – Congo DR",
     "result": null
   },
   {
@@ -164,27 +163,27 @@
   },
   {
     "id": 23,
-    "name": "Uzbekistan – Kolumbia",
+    "name": "Uzbekistan – Colombia",
     "result": null
   },
   {
     "id": 24,
-    "name": "Tshekki – Etelä-Afrikka",
+    "name": "Czechia – South Africa",
     "result": null
   },
   {
     "id": 25,
-    "name": "Sveitsi – Bosnia ja Hertsegovina",
+    "name": "Switzerland – Bosnia and Herzegovina",
     "result": null
   },
   {
     "id": 26,
-    "name": "Kanada – Qatar",
+    "name": "Canada – Qatar",
     "result": null
   },
   {
     "id": 27,
-    "name": "Meksiko – Etelä-Korea",
+    "name": "Mexico – South Korea",
     "result": null
   },
   {
@@ -194,217 +193,217 @@
   },
   {
     "id": 29,
-    "name": "Skotlanti – Marokko",
+    "name": "Brazil – Haiti",
     "result": null
   },
   {
     "id": 30,
-    "name": "Brasilia – Haiti",
+    "name": "Scotland – Morocco",
     "result": null
   },
   {
     "id": 31,
-    "name": "Turkki – Paraguay",
+    "name": "Türkiye – Paraguay",
     "result": null
   },
   {
     "id": 32,
-    "name": "Hollanti – Ruotsi",
+    "name": "Germany – Ivory Coast",
     "result": null
   },
   {
     "id": 33,
-    "name": "Saksa – Norsunluurannikko",
+    "name": "Netherlands – Sweden",
     "result": null
   },
   {
     "id": 34,
-    "name": "Ecuador – Curacao",
+    "name": "Ecuador – Curaçao",
     "result": null
   },
   {
     "id": 35,
-    "name": "Tunisia – Japani",
+    "name": "Tunisia – Japan",
     "result": null
   },
   {
     "id": 36,
-    "name": "Espanja – Saudi-Arabia",
+    "name": "Spain – Saudi Arabia",
     "result": null
   },
-   {
+  {
     "id": 37,
-    "name": "Belgia – Iran",
+    "name": "Belgium – Iran",
     "result": null
   },
   {
     "id": 38,
-    "name": "Uruguay – Kap Verde",
+    "name": "Uruguay – Cape Verde",
     "result": null
   },
   {
     "id": 39,
-    "name": "Uusi-Seelanti – Egypti",
+    "name": "Argentina – Austria",
     "result": null
   },
   {
     "id": 40,
-    "name": "Argentiina – Itävalta",
+    "name": "New Zealand – Egypt",
     "result": null
   },
   {
     "id": 41,
-    "name": "Ranska – Irak",
+    "name": "Norway – Senegal",
     "result": null
   },
   {
     "id": 42,
-    "name": "Norja – Senegal",
+    "name": "France – Iraq",
     "result": null
   },
   {
     "id": 43,
-    "name": "Jordania – Algeria",
+    "name": "Jordan – Algeria",
     "result": null
   },
   {
     "id": 44,
-    "name": "Portugali – Uzbekistan",
+    "name": "England – Ghana",
     "result": null
   },
   {
     "id": 45,
-    "name": "Englanti – Ghana",
+    "name": "Portugal – Uzbekistan",
     "result": null
   },
   {
     "id": 46,
-    "name": "Panama – Kroatia",
+    "name": "Panama – Croatia",
     "result": null
   },
   {
     "id": 47,
-    "name": "Kolumbia – DR Kongo",
+    "name": "Colombia – Congo DR",
     "result": null
   },
   {
     "id": 48,
-    "name": "Bosnia ja Hertsegovina – Qatar",
+    "name": "Switzerland – Canada",
     "result": null
   },
   {
     "id": 49,
-    "name": "Sveitsi – Kanada",
+    "name": "Bosnia and Herzegovina – Qatar",
     "result": null
   },
   {
     "id": 50,
-    "name": "Marokko – Haiti",
+    "name": "Scotland – Brazil",
     "result": null
   },
   {
     "id": 51,
-    "name": "Skotlanti – Brasilia",
+    "name": "Morocco – Haiti",
     "result": null
   },
   {
     "id": 52,
-    "name": "Etelä-Afrikka – Etelä-Korea",
+    "name": "Czechia – Mexico",
     "result": null
   },
   {
     "id": 53,
-    "name": "Tshekki – Meksiko",
+    "name": "South Africa – South Korea",
     "result": null
   },
   {
     "id": 54,
-    "name": "Curacao – Norsunluurannikko",
+    "name": "Curaçao – Ivory Coast",
     "result": null
   },
   {
     "id": 55,
-    "name": "Ecuador – Saksa",
+    "name": "Ecuador – Germany",
     "result": null
   },
   {
     "id": 56,
-    "name": "Japani – Ruotsi",
+    "name": "Japan – Sweden",
     "result": null
   },
   {
     "id": 57,
-    "name": "Tunisia – Hollanti",
+    "name": "Tunisia – Netherlands",
     "result": null
   },
   {
     "id": 58,
-    "name": "Paraguay – Australia",
+    "name": "Türkiye – USA",
     "result": null
   },
   {
     "id": 59,
-    "name": "Turkki – USA",
+    "name": "Paraguay – Australia",
     "result": null
   },
   {
     "id": 60,
-    "name": "Norja – Ranska",
+    "name": "Norway – France",
     "result": null
   },
   {
     "id": 61,
-    "name": "Senegal – Irak",
+    "name": "Senegal – Iraq",
     "result": null
   },
   {
     "id": 62,
-    "name": "Kap Verde – Saudi-Arabia",
+    "name": "Egypt – Iran",
     "result": null
   },
   {
     "id": 63,
-    "name": "Uruguay – Espanja",
+    "name": "New Zealand – Belgium",
     "result": null
   },
   {
     "id": 64,
-    "name": "Egypti – Iran",
+    "name": "Cape Verde – Saudi Arabia",
     "result": null
   },
   {
     "id": 65,
-    "name": "Uusi-Seelanti – Belgia",
+    "name": "Uruguay – Spain",
     "result": null
   },
   {
     "id": 66,
-    "name": "Kroatia – Ghana",
+    "name": "Panama – England",
     "result": null
   },
   {
     "id": 67,
-    "name": "Panama – Englanti",
+    "name": "Croatia – Ghana",
     "result": null
   },
   {
     "id": 68,
-    "name": "DR Kongo – Uzbekistan",
+    "name": "Algeria – Austria",
     "result": null
   },
   {
     "id": 69,
-    "name": "Kolumbia – Portugali",
+    "name": "Jordan – Argentina",
     "result": null
   },
   {
     "id": 70,
-    "name": "Algeria – Itävalta",
+    "name": "Colombia – Portugal",
     "result": null
   },
   {
     "id": 71,
-    "name": "Jordania – Argentiina",
+    "name": "Congo DR – Uzbekistan",
     "result": null
   }
          
