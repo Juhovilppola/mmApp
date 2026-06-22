@@ -229,17 +229,17 @@
   {
     "id": 36,
     "name": "Spain – Saudi Arabia",
-    "result": null
+    "result": 1
   },
   {
     "id": 37,
     "name": "Belgium – Iran",
-    "result": null
+    "result": 0
   },
   {
     "id": 38,
     "name": "Uruguay – Cape Verde",
-    "result": null
+    "result": 0
   },
   {
     "id": 39,
@@ -249,7 +249,7 @@
   {
     "id": 40,
     "name": "New Zealand – Egypt",
-    "result": null
+    "result": 2
   },
   {
     "id": 41,
